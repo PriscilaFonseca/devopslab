@@ -1,13 +1,3 @@
-Agora que já temos certeza que nossa aplicação roda no Docker criado por nós, precisamos ajustar a pipeline para que o Heroku não faça mais a criação da imagem do conteiner e sim use a nossa imagem.
-
-Isso irá simplificar o processo de deploy, pois será apenas subir nossa imagem, porém vai exigir que nosso processo de build faça a criação da imagem.
-
----
-
-###1. 
-Altere o arquivo pipeline.yml para o seguinte conteúdo:
-
-```
 # Nome do Workflow
 name: DevOpsLab Pipeline
 
